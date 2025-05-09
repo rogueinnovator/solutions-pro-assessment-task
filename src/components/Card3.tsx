@@ -1,10 +1,10 @@
 
 const Card3 = () => {
     return (
-        <div data-image="true" className="relative inline-flex flex-col justify-start items-start gap-2.5">
-            <div className="w-[731.02px] h-96 rounded-xl border border-fuchsia-300 border-dashed" />
+        <div data-image="true" className="relative top-20 md:top-0 inline-flex flex-col justify-center items-start gap-2.5">
+            <div className="md:w-[731.02px] h-96 rounded-xl border border-fuchsia-300 border-dashed" />
 
-            <div className="left-[18.60px] top-[18.28px] absolute inline-flex justify-start items-center gap-6">
+            <div className="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:-translate-x-0 md:-translate-y-0 md:left-5 md:top-10 absolute inline-flex justify-start md:flex-row flex-col items-center gap-6">
                 <img className="w-96 h-80 rounded-xl object-cover" src="/images/product7.jpg" alt="Card Image" />
 
                 <div className="inline-flex flex-col justify-start items-start gap-4">

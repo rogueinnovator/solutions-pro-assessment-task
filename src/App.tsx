@@ -63,7 +63,7 @@ const App = () => {
 
       {/* PRODUCTS_IMAGES -------------------------------------------------------*/}
 
-      <div id='products' className='flex justify-center pt-[85px]'>
+      <div id='products' className='flex flex-col md:flex-row justify-center pt-[85px]'>
         {["/images/img1.jpg", "/images/img2.jpg", "/images/img3.jpg"].map((url, index) => <img key={index} loading='lazy' className="w-full h-96 border border-white object-cover" src={url} />)}
       </div>
       {/* ---------------------------------------------------------------------- */}
@@ -71,15 +71,17 @@ const App = () => {
 
       {/* LATEST */}
       <div id='latest' className="w-full mt-[65px] text-center justify-start text-black text-3xl font-bold font-['Sansation'] leading-10">LATEST</div>
-      <div className='flex justify-between items-center pt-[69px] px-[80px]'>
-        <div className='flex flex-col gap-[69px] '>
-          <div className='flex gap-6'>{[{ url: '/images/product1.jpg', desc: 'Lorem ipsum dolor sit amet consectetur. Est ipsum malesuada tincidunt pretium at...', title: 'HOME-MADE SCRUBS - ORGANIC' },
-          { url: '/images/product2.jpg', desc: 'Lorem ipsum dolor sit amet consectetur. Est ipsum malesuada tincidunt pretium at...', title: 'HOME-MADE SCRUBS - ORGANIC' }].map((item, index) => <Card key={index} url={item.url} desc={item.desc} title={item.title} />)}</div>
-          <Card3 />
-        </div>
+      <div className='flex flex-col justify-center'>
+        <div className='flex flex-col md:flex-row justify-between items-center pt-[69px] px-[80px] md:gap-0 gap-80'>
+          <div className='flex flex-col gap-[69px] '>
+            <div className='flex flex-col items-center md:flex-row gap-6 ml-16 md:ml-0'>{[{ url: '/images/product1.jpg', desc: 'Lorem ipsum dolor sit amet consectetur. Est ipsum malesuada tincidunt pretium at...', title: 'HOME-MADE SCRUBS - ORGANIC' },
+            { url: '/images/product2.jpg', desc: 'Lorem ipsum dolor sit amet consectetur. Est ipsum malesuada tincidunt pretium at...', title: 'HOME-MADE SCRUBS - ORGANIC' }].map((item, index) => <Card key={index} url={item.url} desc={item.desc} title={item.title} />)}</div>
+            <Card3 />
+          </div>
 
-        <div className='flex flex-col justify-between items-center mb-[65px]'>
-          {["/images/product4.jpg", "/images/product5.jpg", "/images/product6.jpg"].map((url) => <Card2 imageUrl={url} />)}
+          <div className='flex flex-col justify-between items-center mb-[65px]'>
+            {["/images/product4.jpg", "/images/product5.jpg", "/images/product6.jpg"].map((url) => <Card2 imageUrl={url} />)}
+          </div>
         </div>
       </div>
       {/* ---------------------------------------------------------------------- */}
@@ -90,7 +92,6 @@ const App = () => {
           <button className="text-center justify-start text-black text-[10px] font-normal font-['Sansation'] leading-3 tracking-wide">VIEW ALL</button>
         </div>
       </div>
-
       {/* FOOTER----------------------------------------------------------------- */}
       <Footer />
     </>

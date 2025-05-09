@@ -8,7 +8,7 @@ const Card2: React.FC<Card2Props> = ({ imageUrl }) => {
     return (
         <div
             data-image="true"
-            className="relative inline-flex flex-col justify-start items-start gap-2.5"
+            className="relative  flex-col justify-start items-start gap-2.5"
         >
             <img className="w-72 h-[310px] object-cover" src={imageUrl} loading='lazy' alt="Card image" />
             <div className="w-60 h-44 absolute left-[34.21px] top-[50.26px] bg-white/90" />
