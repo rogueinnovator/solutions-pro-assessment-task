@@ -45,8 +45,8 @@ This project is a React-based UI implementation for a Solution Lab assessment ta
 
 1. **Clone the repository**:  
   ```bash
-  git clone https://github.com/your-username/solution-lab-assessment.git  
-  cd solution-lab-assessment
+  git clone https://github.com:rogueinnovator/solutions-pro-assessment-task.git 
+  cd solutions-pro-assessment-task
   ```
 
 2. **Install dependencies**:  
